@@ -8,9 +8,9 @@
 #include <stdbool.h> 
 
 // function declarations 
-void descisions1(void);
-void descisions2(void);
-void descisions3(void);
-void descisions4(void);
-void descisions5(void);
-void descisions6(void);
+void decisions1(void);
+void decisions2(void);
+void decisions3(void);
+void decisions4(void);
+void decisions5(void);
+void decisions6(void);
