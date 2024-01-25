@@ -12,7 +12,14 @@ void descisions1(void){
     // initiate it using macro value defined in header file 
     float num = NUM;
 
-    // uses an if statement 
+    if (num<4000.0){
+        printf("%1.f is less than 4000.0\n", num);
+    }
+
+
+    // change value in variable 
+    num += num;
+    // uses an if-else statement 
     if (num < 40000.0){
         printf("%.1f is less than 4000.0\n", num);
     }else {
