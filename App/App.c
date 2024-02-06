@@ -6,6 +6,7 @@
 #include "Loops.c"
 #include "Functions.c"
 #include "Pointer.c"
+#include "PassByRef.c"
 
 int main(void){
     /* BasicIo*/
@@ -49,4 +50,14 @@ int main(void){
     //printf("The size of the pointer to the global variable j is %d bytes.\n", getPointerToDoubleBytes());
     //printf("The size of the value in the global variable i is %d bytes.\n", getIntBytes());
     //printf("The size of the pointer to the global variable i is %d bytes.\n", getPointerToIntBytes());
+    //pointerToNull();
+
+    /*Pass by Reference*/
+    // declare and initialize variables for (x,y) point
+    double x = 3.0;
+    double y = 4.0;
+
+    // must use the ampersand to use an address of a avariable
+    cartesianToPolar(x,y, &radius, &theta);
+    printf("%.2f, %.2f equals (%.2f, %.2f)\n", x, y, radius, theta);
 }
